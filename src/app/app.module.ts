@@ -9,18 +9,22 @@ import { FormsModule } from '@angular/forms';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     ReadComponent,
-    CreateComponent
+    CreateComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     // HttpClient,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+   AppModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
