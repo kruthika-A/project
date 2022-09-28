@@ -21,18 +21,18 @@ export class CreateComponent implements OnInit {
 
   constructor( private service: ServiceService,private aRoute:ActivatedRoute,private router:Route) 
   {
-    aRoute.queryParams.subscribe(params =>{
-      this.userId=params['userId']
+//     aRoute.queryParams.subscribe((params: any) =>{
+//       this.userId=params['userId']
      
-this.service.getId( this.userId ).subscribe((res: any) => {
-// console.log(res, 'respone')
-this.update=true;
-this.changingname='update';
-this.userId = res[0].id;
-this.username= res[0].name ;
-this.userage = res[0].age;this.userjob = res[0].job;
-})
-    })
+// this.service.getId( this.userId ).subscribe((res: any) => {
+// // console.log(res, 'respone')
+// this.update=true;
+// this.changingname='update';
+// this.userId = res[0].id;
+// this.username= res[0].name ;
+// this.userage = res[0].age;this.userjob = res[0].job;
+// })
+//     })
   }
 
   ngOnInit(): void {
